@@ -1,13 +1,13 @@
 onerror {resume}
 quietly WaveActivateNextPane {} 0
-add wave -noupdate /full_adder/a
-add wave -noupdate /full_adder/b
-add wave -noupdate /full_adder/cin
-add wave -noupdate /full_adder/sum
-add wave -noupdate /full_adder/carry
+add wave -noupdate /full_subtractor/a
+add wave -noupdate /full_subtractor/b
+add wave -noupdate /full_subtractor/bin
+add wave -noupdate /full_subtractor/diff
+add wave -noupdate /full_subtractor/borrow
 TreeUpdate [SetDefaultTree]
-WaveRestoreCursors {{Cursor 1} {1388 ps} 0}
-quietly wave cursor active 1
+WaveRestoreCursors {{Cursor 1} {0 ps} 0}
+quietly wave cursor active 0
 configure wave -namecolwidth 150
 configure wave -valuecolwidth 100
 configure wave -justifyvalue left
